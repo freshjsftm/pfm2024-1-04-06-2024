@@ -4,5 +4,6 @@ class MyMath {
   static del = (a, b) => a / b;
   static mult = (a, b) => a * b;
 }
+console.log('inside My Math file!!!');
 //export
 exports.MyMath = MyMath;

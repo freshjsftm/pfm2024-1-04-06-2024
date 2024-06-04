@@ -1,11 +1,18 @@
 'use strict';
-//import
-const { MyMath } = require('./MyMath');
-const { Component } = require('./Component');
 
-console.log(MyMath.mult(2,6));
-const component = new Component('new text');
-console.log(component.content);
+const { Article } = require('./components/Article');
+const { Button } = require('./components/Button');
 
-// require
-// resolving -> loading -> wrapping -> evalution -> cashing
+const article = new Article();
+article.render();
+
+const btn = new Button();
+btn.render();
+
+//require
+//resolving
+// 1 - core modules
+// 2 - file  *.js | *.json
+// 3 - dir   package.json-> "main" | index.js | index.json
+// 4 - node_modules
+// 5 - throw new Error()

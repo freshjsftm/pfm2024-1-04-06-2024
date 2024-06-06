@@ -5,7 +5,8 @@ const fs = require('fs/promises');
 
 fs.readFile('./text.txt', 'utf-8')
 .then((data)=>{
-	console.log(data)
+	console.log(data);
+	fs.appendFile('./text.txt', '\nTom Rot','utf-8');
 })
 .catch((err)=>{
 	console.log(err)

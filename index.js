@@ -10,3 +10,11 @@ fs.readFile('./text.txt', 'utf-8')
 .catch((err)=>{
 	console.log(err)
 })
+
+fs.writeFile('./newtext.txt', 'tttt', 'utf-8')
+.then((data)=>{
+		console.log(data)
+})
+.catch((err)=>{
+	console.log(err)
+})

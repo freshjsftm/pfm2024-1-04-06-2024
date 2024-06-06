@@ -11,7 +11,7 @@ fs.readFile('./text.txt', 'utf-8')
 	console.log(err)
 })
 
-fs.writeFile('./newtext.txt', 'tttt', 'utf-8')
+fs.appendFile('./newtext.txt', '\nnew line', 'utf-8')
 .then((data)=>{
 		console.log(data)
 })

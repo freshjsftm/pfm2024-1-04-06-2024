@@ -1,20 +1,27 @@
 'use strict';
-// const _ = require('lodash'); //commonJS Modules
-import _ from 'lodash'; //ECMAScript modules
-// const cowsay = require("cowsay");
-import * as cowsay from 'cowsay'; //all method in object cowsay
-// import {say} from "cowsay";
-// console.log(cowsay);
-// const {MyMath} = require('./MyMath');
+
+import _ from 'lodash';
+import * as cowsay from 'cowsay';
+
+// default value
 import MyMath from './MyMath';
 
-// import * as utils from './utils';
-// console.log(utils);
-// utils.f1()
 
-import { f1, f4 } from './utils';
+import nameForDefault, {f1} from './utils';
+console.log(nameForDefault);
 f1();
-f4();
+
+// import nameForDefault, * as utils from './utils';
+// console.log(nameForDefault);
+// utils.f1();
+
+// import * as utils from './utils';
+// console.log(utils.default);
+// utils.f1();
+
+// import { f1, f4 } from './utils';
+// f1();
+// f4();
 
 const number = 456;
 console.log('Hi!', number);

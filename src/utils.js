@@ -14,5 +14,5 @@ export const f4 = () => {
   console.log('f4');
 };
 
-//default export object
-//export default {f1,f2, f3, f4};
+export default 100000000;
+

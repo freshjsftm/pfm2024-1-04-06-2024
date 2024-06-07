@@ -8,9 +8,13 @@ import * as cowsay from 'cowsay'; //all method in object cowsay
 // const {MyMath} = require('./MyMath');
 import MyMath from './MyMath';
 
-import utils from './utils';
-console.log(utils);
-utils.f1()
+// import * as utils from './utils';
+// console.log(utils);
+// utils.f1()
+
+import { f1, f4 } from './utils';
+f1();
+f4();
 
 const number = 456;
 console.log('Hi!', number);

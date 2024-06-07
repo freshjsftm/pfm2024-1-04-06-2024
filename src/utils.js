@@ -1,18 +1,18 @@
-const f1 = () => {
+export const f1 = () => {
   console.log('f1');
 };
 
-const f2 = () => {
+export const f2 = () => {
   console.log('f2');
 };
 
-const f3 = () => {
+export const f3 = () => {
   console.log('f3');
 };
 
-const f4 = () => {
+export const f4 = () => {
   console.log('f4');
 };
 
 //default export object
-export default {f1,f2, f3, f4};
+//export default {f1,f2, f3, f4};

@@ -6,18 +6,22 @@ import * as cowsay from 'cowsay'; //all method in object cowsay
 // import {say} from "cowsay";
 // console.log(cowsay);
 // const {MyMath} = require('./MyMath');
-import { MyMath } from "./MyMath";
+import MyMath from './MyMath';
+
+import utils from './utils';
+console.log(utils);
+utils.f1()
 
 const number = 456;
 console.log('Hi!', number);
 
-console.log(cowsay.say({
-    text : "I'm a moooodule",
-    e : "oO",
-    T : "U "
-}));
+console.log(
+  cowsay.say({
+    text: "I'm a moooodule",
+    e: 'oO',
+    T: 'U ',
+  })
+);
 
-console.log(_.random(1,7));
-
-console.log(MyMath.sum(4,6));
-
+console.log(_.random(1, 7));
+console.log(MyMath.sum(4, 6));

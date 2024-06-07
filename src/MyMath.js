@@ -5,5 +5,9 @@ class MyMath {
   static mult = (a, b) => a * b;
 }
 console.log('inside My Math file!!!');
+
 //export commonJS 
-exports.MyMath = MyMath;
+// exports.MyMath = MyMath;
+
+// export ECMAScript modules
+export default MyMath;

@@ -1,9 +1,10 @@
 'use strict';
-
-//const fs = require('fs/promises');
 const _ = require('lodash');
+// import _ from 'lodash';
 const cowsay = require("cowsay");
+// import cowsay from "cowsay";
 const {MyMath} = require('./MyMath');
+// import { MyMath } from "./MyMath";
 
 const number = 456;
 console.log('Hi!', number);
